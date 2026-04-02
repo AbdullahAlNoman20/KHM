@@ -36,7 +36,7 @@ const Nav = () => {
   return (
     <>
       {/* ── TOP INFO STRIP (CENTERED ALWAYS) ── */}
-      <div className="bg-blue-900 text-white text-xs font-medium tracking-wide py-1.5 font-primary">
+      <div className="hidden md:block bg-blue-900 text-white text-xs font-medium tracking-wide py-1.5 font-primary">
         <div className="max-w-[1400px] mx-auto px-6 flex flex-wrap justify-center items-center gap-4 text-center">
           
           <span className="flex items-center gap-1 opacity-90">
@@ -78,7 +78,7 @@ const Nav = () => {
             </div>
 
             <div className="flex flex-col leading-tight ">
-              <span className="font-condensed text-[18px] font-bold uppercase tracking-wide text-blue-900"> 
+              <span className="font-condensed md:text-[8px] lg:text-[18px] font-bold uppercase tracking-wide text-blue-900"> 
                 Khulna <span className="text-orange-500">Hardware</span> Mart
               </span>
               <span className="text-[10px] uppercase tracking-widest text-slate-500">
