@@ -49,10 +49,10 @@ const ProductsShow = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("/public/JSON/Products.json")
+      .get("/JSON/Products.json")
       .then((res) => {
         setProducts(res.data);
-        setFiltered(res.data);
+        setFiltered(res.data); 
       })
       .catch(() => setError("Failed to load products. Make sure products.json is in /public."))
       .finally(() => setLoading(false));
