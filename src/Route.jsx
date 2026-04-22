@@ -26,6 +26,10 @@ import AccountsStatus from "./Pages/Accounts/AccountsStatus";
 import DraftInvoice from "./Pages/Invoice/DraftInvoice";
 import DueInvoice from "./Pages/Invoice/DueInvoice";
 import PaidInvoice from "./Pages/Invoice/PaidInvoice";
+import DeshboardLayout from "./Pages/Dashboard/DeshboardLayout";
+import AdminDeshboard from "./Pages/Dashboard/AdminDeshboard";
+import Revenue from "./Pages/Dashboard/Revenue";
+import BookDeveloper from "./Pages/Dashboard/BookDeveloper";
 
 const Route = createBrowserRouter([
   {
@@ -39,7 +43,17 @@ const Route = createBrowserRouter([
     children: [
       { path: "/", element: <Home></Home> },
       { path: "/stock-warning", element: <Stock></Stock> },
-      { path: "/dashboard", element: <Dashboard></Dashboard> },
+      {
+        path: "/dashboard",
+        element: <DeshboardLayout></DeshboardLayout>,
+        children: [
+          { index: true, element: <Navigate to="admin" replace /> },
+          { path: "admin", element: <AdminDeshboard></AdminDeshboard> },
+          { path: "revenue", element: <Revenue></Revenue> },
+          { path: "book", element: <BookDeveloper></BookDeveloper> },
+        ],
+      },
+
       {
         path: "/customer",
         element: <CustomerLayout></CustomerLayout>,
@@ -79,13 +93,13 @@ const Route = createBrowserRouter([
 
       {
         path: "/products",
-  element: <ProductLayout />,
-  children: [
-    { index: true, element: <Navigate to="all" replace /> },
+        element: <ProductLayout />,
+        children: [
+          { index: true, element: <Navigate to="all" replace /> },
 
-    { path: "all", element: <AllProducts /> },
-    { path: "add", element: <AddProduct /> },
-  ],
+          { path: "all", element: <AllProducts /> },
+          { path: "add", element: <AddProduct /> },
+        ],
       },
       { path: "products/:id", element: <ProductDetails></ProductDetails> },
 
