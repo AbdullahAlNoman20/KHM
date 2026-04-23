@@ -3,9 +3,11 @@ import { FiUsers, FiCheckCircle, FiAlertCircle, FiUserPlus, FiTruck, FiMenu, FiX
 import { useState } from "react";
 
 const NAV_ITEMS = [
+  { to: "overview", label: "Overview", icon: <FiAlertCircle size={16} /> },
   { to: "admin", label: "Admin", icon: <FiUsers size={16} /> },
   { to: "revenue", label: "Revenue", icon: <FiCheckCircle size={16} /> },
   { to: "book", label: "Book for a bug", icon: <FiAlertCircle size={16} /> },
+  
   
 ];
 

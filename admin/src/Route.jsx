@@ -30,6 +30,7 @@ import DeshboardLayout from "./Pages/Dashboard/DeshboardLayout";
 import AdminDeshboard from "./Pages/Dashboard/AdminDeshboard";
 import Revenue from "./Pages/Dashboard/Revenue";
 import BookDeveloper from "./Pages/Dashboard/BookDeveloper";
+import DeshboardOverview from "./Pages/Dashboard/DeshboardOverview";
 
 const Route = createBrowserRouter([
   {
@@ -48,6 +49,7 @@ const Route = createBrowserRouter([
         element: <DeshboardLayout></DeshboardLayout>,
         children: [
           { index: true, element: <Navigate to="admin" replace /> },
+          { path: "overview", element: <DeshboardOverview></DeshboardOverview> },
           { path: "admin", element: <AdminDeshboard></AdminDeshboard> },
           { path: "revenue", element: <Revenue></Revenue> },
           { path: "book", element: <BookDeveloper></BookDeveloper> },
