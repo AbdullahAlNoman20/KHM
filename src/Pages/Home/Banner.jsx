@@ -39,7 +39,7 @@ const Banner = () => {
   const s = slides[cur];
 
   return (
-    <div className="w-full overflow-hidden border border-slate-200">
+    <div className="w-full overflow-hidden">
 
       {/* SLIDER */}
       <div
