@@ -8,7 +8,7 @@
     "sub": "Premium quality basin mixers, taps and accessories.\nDurable, rust-proof and stylish design.",
     "ctaLabel": "Shop Basin Items",
     "ctaBg": "#2563EB",
-    "image": "/public/Image/img5.png"
+    "image": "/Image/img5.png"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "sub": "High-quality stainless steel sinks and faucets.\nPerfect for modern kitchens.",
     "ctaLabel": "Explore Kitchen",
     "ctaBg": "#10B981",
-    "image": "/public/Image/img6.jpg"
+    "image": "/Image/img6.jpg"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "sub": "Strong, leak-proof pipes for home and industry use.\nBest price guaranteed.",
     "ctaLabel": "View Pipes",
     "ctaBg": "#EA580C",
-    "image": "/public/Image/img7.png"
+    "image": "/Image/img7.png"
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "sub": "Rain showers, hand showers & complete sets.\nComfort meets elegance.",
     "ctaLabel": "Browse Showers",
     "ctaBg": "#6366F1",
-    "image": "/public/Image/img8.jpg"
+    "image": "/Image/img8.jpg"
   },
   {
     "id": 5,
@@ -52,6 +52,6 @@
     "sub": "Complete fitting solutions for every corner.\nReliable and long-lasting.",
     "ctaLabel": "See Accessories",
     "ctaBg": "#F59E0B",
-    "image": "/public/Image/img9.jfif"
+    "image": "/Image/img9.jfif"
   }
 ]
