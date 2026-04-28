@@ -1,9 +1,6 @@
-
-
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import Root from "./Root";
 import ScrollToTop from "./ScrollToTop";
-
 import Home from "./Pages/Home/Home";
 import Stock from "./Pages/Stock/Stock";
 import Dashboard from "./Pages/Dashboard/Dashboard";
@@ -31,6 +28,7 @@ import AdminDeshboard from "./Pages/Dashboard/AdminDeshboard";
 import Revenue from "./Pages/Dashboard/Revenue";
 import BookDeveloper from "./Pages/Dashboard/BookDeveloper";
 import DeshboardOverview from "./Pages/Dashboard/DeshboardOverview";
+
 
 const Route = createBrowserRouter([
   {
