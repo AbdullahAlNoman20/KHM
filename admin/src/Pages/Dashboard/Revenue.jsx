@@ -113,7 +113,7 @@ const Revenue = () => {
       <div className="bg-white border-b border-gray-200 px-6 py-8">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
-            <h1 className="text-3xl font-bold text-gray-900">Revenue Overview 💰</h1>
+            <h1 className="text-3xl font-bold text-gray-900">Revenue Overview </h1>
             <p className="text-gray-500 text-lg mt-1">Here's how much money your shop is making, boss!</p>
           </div>
           <div className="flex gap-2 bg-gray-100 p-1 rounded-xl">
@@ -154,7 +154,7 @@ const Revenue = () => {
         <div className="bg-white border border-gray-200 rounded-2xl p-7">
           <div className="flex items-center justify-between mb-2">
             <div>
-              <h2 className="text-xl font-bold text-gray-900">Monthly Revenue 📊</h2>
+              <h2 className="text-xl font-bold text-gray-900">Monthly Revenue </h2>
               <p className="text-gray-500 text-base mt-0.5">Jan — Aug 2025 · All in Bangladeshi Taka</p>
             </div>
             <div className="bg-green-100 text-green-700 text-base font-bold px-4 py-2 rounded-xl">
@@ -169,7 +169,7 @@ const Revenue = () => {
  
           {/* Category breakdown */}
           <div className="bg-white border border-gray-200 rounded-2xl p-7">
-            <h2 className="text-xl font-bold text-gray-900 mb-1">Revenue by Category 🏷️</h2>
+            <h2 className="text-xl font-bold text-gray-900 mb-1">Revenue by Category </h2>
             <p className="text-gray-500 text-base mb-6">Where the money's actually coming from</p>
             <div className="space-y-4">
               {CATEGORIES.map(({ name, revenue, pct, color }) => (
@@ -189,7 +189,7 @@ const Revenue = () => {
  
           {/* Recent transactions */}
           <div className="bg-white border border-gray-200 rounded-2xl p-7">
-            <h2 className="text-xl font-bold text-gray-900 mb-1">Recent Transactions 🧾</h2>
+            <h2 className="text-xl font-bold text-gray-900 mb-1">Recent Transactions </h2>
             <p className="text-gray-500 text-base mb-6">Latest money in & money out</p>
             <div className="space-y-3">
               {RECENT.map(({ label, amount, type, date }) => (
@@ -217,17 +217,17 @@ const Revenue = () => {
           <div>
             <p className="text-green-100 text-lg font-medium">Total All-Time Revenue</p>
             <p className="text-white text-4xl font-bold mt-1">৳1,84,50,000</p>
-            <p className="text-green-200 text-base mt-1">Since 2020 · 5 years of hard work! 💪</p>
+            <p className="text-green-200 text-base mt-1">Since 2020 · 5 years of hard work! </p>
           </div>
           <div className="text-center sm:text-right">
             <p className="text-green-100 text-base">Average per month</p>
             <p className="text-white text-3xl font-bold mt-1">৳3.07L</p>
-            <p className="text-green-200 text-base mt-1">Not bad at all, boss 😎</p>
+            <p className="text-green-200 text-base mt-1">Not bad at all, boss </p>
           </div>
         </div>
  
         <p className="text-center text-gray-400 text-base pb-6">
-          BuildMart Hardware · Revenue Report · Keep counting those takas! 💸
+          Khulna Hardware Mart · Revenue Report · Keep counting those takas! 
         </p>
       </div>
     </div>

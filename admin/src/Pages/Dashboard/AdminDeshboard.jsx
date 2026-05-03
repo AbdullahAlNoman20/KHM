@@ -216,8 +216,8 @@ const AdminDeshboard = () => {
             <FiShield size={28} />
           </div>
           <div>
-            <h1 className="text-3xl font-bold text-gray-900">Admin Power Center ⚡</h1>
-            <p className="text-gray-500 text-base mt-1">You run things here, boss. Manage passwords, admins — the whole empire! 🏰</p>
+            <h1 className="text-3xl font-bold text-gray-900">Admin Power Center </h1>
+            <p className="text-gray-500 text-base mt-1">This is Admin Power </p>
           </div>
         </div>
       </div>
@@ -228,7 +228,7 @@ const AdminDeshboard = () => {
         <Card>
           <SectionTitle
             icon={<FiLock size={24} />}
-            title="Change Your Password 🔐"
+            title="Change Your Password "
             subtitle="Update your secret key — make it strong and don't use '123456' please!"
             color="text-green-600"
           />
@@ -267,7 +267,7 @@ const AdminDeshboard = () => {
                 <ul className="mt-2 space-y-1 text-amber-700 text-base list-disc list-inside">
                   <li>Don't use your name or shop name</li>
                   <li>Mix uppercase, numbers & symbols</li>
-                  <li>Never share with anyone 🤫</li>
+                  <li>Never share with anyone </li>
                 </ul>
               </div>
             </div>
@@ -278,8 +278,8 @@ const AdminDeshboard = () => {
         <Card>
           <SectionTitle
             icon={<FiUserPlus size={24} />}
-            title="Add New Admin 🧑‍💼"
-            subtitle="Give someone the keys to the kingdom — choose wisely, boss!"
+            title="Add New Admin "
+            subtitle="Give someone the keys to the kingdom "
             color="text-blue-600"
           />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8">
@@ -318,7 +318,7 @@ const AdminDeshboard = () => {
                           : "border-gray-200 text-gray-500 hover:border-gray-300"
                         }`}
                     >
-                      {role === "Super Admin" ? "👑 Super Admin" : "🧑‍💼 Admin"}
+                      {role === "Super Admin" ? " Super Admin" : " Admin"}
                     </button>
                   ))}
                 </div>
@@ -332,10 +332,10 @@ const AdminDeshboard = () => {
             </div>
             <div className="mt-6 md:mt-0">
               <div className="bg-blue-50 border border-blue-200 rounded-2xl p-5 mb-4">
-                <p className="text-blue-800 text-base font-bold mb-2">🔑 Role Permissions</p>
+                <p className="text-blue-800 text-2xl font-bold mb-2"> Role Permissions</p>
                 <div className="space-y-3">
                   <div>
-                    <p className="text-blue-700 text-base font-semibold">🧑‍💼 Admin</p>
+                    <p className="text-blue-700 text-base font-semibold"> Admin</p>
                     <ul className="text-blue-600 text-base mt-1 space-y-0.5 list-disc list-inside">
                       <li>View sales & inventory</li>
                       <li>Manage products & orders</li>
@@ -343,7 +343,7 @@ const AdminDeshboard = () => {
                     </ul>
                   </div>
                   <div className="border-t border-blue-200 pt-3">
-                    <p className="text-blue-700 text-base font-semibold">👑 Super Admin</p>
+                    <p className="text-blue-700 text-base font-semibold"> Super Admin</p>
                     <ul className="text-blue-600 text-base mt-1 space-y-0.5 list-disc list-inside">
                       <li>Everything Admin can do</li>
                       <li>Add / remove admins</li>
@@ -354,7 +354,7 @@ const AdminDeshboard = () => {
               </div>
               <div className="bg-green-50 border border-green-200 rounded-2xl p-4">
                 <p className="text-green-800 text-base">
-                  🎉 New admins get an email invite and can login right away. They can change their own password later!
+                  New admins get an email invite and can login right away. They can change their own password later!
                 </p>
               </div>
             </div>
@@ -366,7 +366,7 @@ const AdminDeshboard = () => {
           <div className="flex items-start justify-between flex-wrap gap-3 mb-7">
             <SectionTitle
               icon={<FiUsers size={24} />}
-              title="All Admins 👀"
+              title="All Admins "
               subtitle="Everyone who has the keys — keep an eye on them!"
               color="text-purple-600"
             />
@@ -392,9 +392,9 @@ const AdminDeshboard = () => {
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-wrap items-center gap-2 mb-1">
                     <span className="text-gray-900 text-lg font-bold">{admin.name}</span>
-                    {admin.you && <span className="bg-green-600 text-white text-base px-3 py-0.5 rounded-full font-semibold">You 👋</span>}
+                    {admin.you && <span className="bg-green-600 text-white text-base px-3 py-0.5 rounded-full font-semibold">You </span>}
                     <span className={`text-base px-3 py-0.5 rounded-full font-semibold ${admin.role === "Super Admin" ? "bg-purple-100 text-purple-700" : "bg-blue-100 text-blue-700"}`}>
-                      {admin.role === "Super Admin" ? "👑" : "🧑‍💼"} {admin.role}
+                      {admin.role === "Super Admin" ? "" : ""} {admin.role}
                     </span>
                   </div>
                   <div className="flex flex-wrap items-center gap-3 text-gray-500 text-base">
@@ -450,15 +450,12 @@ const AdminDeshboard = () => {
           <div className="mt-6 bg-orange-50 border border-orange-200 rounded-2xl p-4 flex items-start gap-3">
             <FiAlertTriangle size={20} className="text-orange-500 flex-shrink-0 mt-0.5" />
             <p className="text-orange-800 text-base">
-              <strong>Heads up!</strong> Only Super Admins can add or remove other admins. Don't give keys to strangers! 🔑
+              <strong>Heads up!</strong> Only Super Admins can add or remove other admins. Don't give keys to strangers! 
             </p>
           </div>
         </Card>
  
-        {/* Footer */}
-        <p className="text-center text-gray-400 text-base pb-6">
-          BuildMart Admin Panel · You're the boss here! 💪
-        </p>
+       
  
       </div>
     </div>
